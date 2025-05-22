@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        *{
+            padding: 5px;
+        }
+        header{
+            background-color: rgb(249, 198, 224);
+            
+           
+        }
+        .headlist {
+            display: flex;
+            height: 100%;
+            /* width: 100%; */
+            align-items: center;
+            padding: 20px;
+        }
+        .headlist img{
+            width: 100px;
+            height: 100px;
+        }
+        header ul li{
+            /* margin-top: 15px; */
+            list-style: none;
+            display: inline-block;
+            /* padding: 10px; */
+            font-weight: bold;
+            margin-left:10px ;
+            margin-right: 10px;
+            font-size: 20px;
+            
+        }
+        header ul li:hover{
+            color: red;
+        }
+        .peter{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            gap: 20px; /* gap between rows and columns */
+             padding: 20px; 
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 1;
+            margin-top: -15px;
+        }
+        .peter img{
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        /* .thiel{
+             text-align: center;
+            padding: 20px; } */
+        
+        .thiel h1{
+            /* text-align: center;*/
+            padding: 20px; 
+            font-size: 40px;
+            margin-bottom: -20px;
+        }
+        .eren{
+            text-align: center;
+        }
+        .eren button{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .peter button{
+            
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+            text-align: center;
+        }
+        /* .new{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 30px;
+        } */
+        button:hover{
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headlist">
+            <img src="shop logo.jpg">
+        <ul>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Home Living</li>
+            <li>kitchen</li>
+        </ul>
+        </div>
+    </header>
+    <section class="thiel">
+        <h1>Mens</h1>
+        <div class="peter">
+            <div class="Newarivals">
+                <img src="tshirts.jpeg">
+                <h5>Mens T-shirts</h5>
+                <h6>$25.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="hoodie.jpg">
+                <h5>Mens Hoodie</h5>
+                <h6>$15.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="shoesmens.webp">
+                <h5>Shoes</h5>
+                <h6>$16.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="mensshirt.jpg">
+                <h5>Shirts</h5>
+                <h6>$18.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+        </div>
+        <div class="eren"><button>Shop More</button></div>
+    </section>
+    
+    <section class="thiel">
+        <h1>Womens</h1>
+        <div class="peter">
+            <div class="Newarivals">
+                <img src="tops.jpg">
+                <h5> Womens Tops</h5>
+                <h6>$25.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="Wjeans.webp">
+                <h5>Womens's Jean</h5>
+                <h6>$15.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="partywear.webp">
+                <h5>Women's Partywear</h5>
+                <h6>$16.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="Wfootwear.webp">
+                <h5>Women's Footwear</h5>
+                <h6>$18.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+        </div>
+        <div class="eren"><button>Shop More</button></div>
+    </section>
+    <section class="thiel">
+        <h1>Kids</h1>
+        <div class="peter">
+            <div class="Newarivals">
+                <img src="Kfrok.webp">
+                <h5>Girl's Frog</h5>
+                <h6>$25.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="Kfootwear.webp">
+                <h5>Girl's Footwear</h5>
+                <h6>$15.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="boysdress.avif">
+                <h5>Boy's Dress Combo</h5>
+                <h6>$16.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="boysfootwear.jpg">
+                <h5>Shoes</h5>
+                <h6>$18.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+        </div>
+        <div class="eren"><button>Shop More</button></div>
+    </section>
+    <section class="thiel">
+        <h1>Home Living Items</h1>
+        <div class="peter">
+            <div class="Newarivals">
+                <img src="sofa.jpeg">
+                <h5>Sofa</h5>
+                <h6>$25.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="table and chair.jpg">
+                <h5>Table and Chair Combo</h5>
+                <h6>$15.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="art.jpg">
+                <h5>Wall Art</h5>
+                <h6>$16.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="dining.jpg">
+                <h5>Dinner Table and Chair</h5>
+                <h6>$18.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+        </div>
+        <div class="eren"><button>Shop More</button></div>
+    </section>
+    <section class="thiel">
+        <h1>Kitchen Items</h1>
+        <div class="peter">
+            <div class="Newarivals">
+                <img src="plateNbowls.jpg">
+                <h5>Plate and Bowl Combo</h5>
+                <h6>$25.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="cookingpaddle.jpeg">
+                <h5>Cooking Paddle Set</h5>
+                <h6>$15.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="pan.webp">
+                <h5>Cooking Pan</h5>
+                <h6>$16.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="ricecooker.webp">
+                <h5>Rice Cooker</h5>
+                <h6>$18.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+        </div>
+        <div class="eren"><button>Shop More</button></div>
+    </section>
+    
+    
+</body>
+</html>

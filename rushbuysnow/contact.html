@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heropage{
+            background-image: url(flowerpot.jpg);
+            height: 100%;
+            padding: 25px;
+        }
+        .contactcontainer{
+            /* background-color: cadetblue; */
+            width: 400px;
+             height: 100px; 
+            text-align: center;
+            margin-top: 150px;
+            margin-left: 350px;
+            margin-bottom: 150px;
+           
+            /* align-items: center; */
+            
+        }
+        .contactcontainer h1{
+            font-size: 55px;
+        }
+        .contactcontainer p{
+            margin-top: -40px;
+            font-size: 22px;
+            /* font-weight: 550; */
+        }
+        .sectionone{
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid: 20px;
+        }
+         .gritcont{
+           /* padding: 25px; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid: 0px;
+        }
+        .intainer{
+            display: block;
+            padding: 10px;
+            text-align: left;
+        }
+        .sidecontainer{
+            /* align-items: center; */
+            margin-top: 60px;
+            padding: 20px;
+            /* line-height: 1; */
+        }
+        .sidecontainer p{
+            font-size: 20px;
+            line-height: 0.25;
+
+        } 
+        .sidecontainer h1{
+            font-size: 40px;
+
+        } 
+        .intainer button{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        button:hover{
+            background-color:white;
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="heropage">
+        <div class="contactcontainer">
+    <h1>Contact Us</h1>
+    <p>Home/contact</p>
+    </div>
+    </section>
+    <section class="sectionone">
+        <form class="formcontainer" >
+            <h1>Fill your credentals</h1>
+            <div class="gritcont">
+            <div class="intainer"><label for="firstname">FirstName:</label><br>
+            <input type="name" id="firstname" required></div>
+
+            <div class="intainer"><label for="lastname">LastName:</label><br>
+            <input type="name" id="lastname" required></div>
+
+            <div class="intainer"><label for="email">Email:</label><br>
+            <input type="name" id="email" required></div>
+
+            <div class="intainer"><label for="tel">Phone:</label><br>
+            <input type="tel" id="tel" required></div>
+
+            <div class="intainer"><label for="address">Address:</label><br>
+            <input type="address" id="adress" required></div>
+
+            <div class="intainer"><label for="subject">Subject:</label><br>
+            <input type="text" id="subject" required></div></div>
+            <form class="anotherform">
+                <div class="intainer"><label for="message">Message:</label><br>
+                    <textarea name="message" cols="70" rows="7"></textarea>
+                    <button onclick="">Submit</button></div>
+            </form>
+        </form>
+        <div class="sidecontainer">
+            <p>Contact Us</p>
+            <h1>Get in touch with for your easy shopping</h1>
+            <p>Battrahalli Road, Bangalore, 8009001</p>
+            <p>785-634-1209</p>
+            <p>rushbysnow@gmail.com</p>
+        </div>
+    </section>
+    
+</body>
+</html>

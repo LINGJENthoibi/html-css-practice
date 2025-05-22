@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>RushBuySnow</title>
+    <style>
+        .oneH {
+            display: flex;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px;
+        }
+
+        .oneH h1 {
+            font-size: 22px;
+            margin-right: 30px;
+        }
+
+        .twoH {
+            display: flex;
+            background-color: rgb(249, 198, 224);
+            align-items: center;
+            padding: 25px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+        .boat button{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            margin-left: 8px;
+        }
+
+        .both {
+            margin-left: 300px;
+        }
+
+        .both ul {
+            align-items: center;
+        }
+
+        .both ul li {
+            display: inline-block;
+            list-style: none;
+            font-size: 22px;
+            padding: 8px;
+        }
+        .both ul li a{
+           text-decoration: none;
+           color: #000;
+        }
+        .both ul li a:hover{
+            color:red;
+        }
+        .ssearchh input {
+            padding: 8px;
+            width: 350px;
+        }
+
+        .ssearchh i {
+            padding: 8px;
+        }
+
+        .mmenu {
+            margin-left: 20px;
+        }
+
+        .mmenu i {
+            padding: 10px;
+        }
+
+        .hero {
+            height: 100%;
+            padding: 140px;
+            background-image: url(shopping.webp);
+        }
+
+        .hero_container {
+            background-color: transparent;
+            border: 1px solid black;
+            width: 800px;
+            height: 360px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero_container h1 {
+            font-size: 50px;
+        }
+
+        .hero_container p {
+            font-size: 20px;
+            line-height: 2;
+        }
+
+        .hero_container button {
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+        }
+        .oneS{
+            text-align: center;
+            padding: 20px; 
+        }
+        .oneS h1{
+            font-size: 50px;
+            /* justify-content: center; */
+        }
+        .gridcontainer button {
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px; /* gap between rows and columns */
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            margin-right: 80px;
+            margin-left: 80px;
+            margin-top: -20px;
+            margin-bottom: 20px;
+            /* background-color: aquamarine; */
+            
+        }
+        .catego{
+            background-color:rgb(249, 198, 224) ;
+        }
+
+        .gridcontainer img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .gridcontainer button {
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .catego h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .twoS{
+            text-align: center;
+            background-color:rgb(249, 198, 224);
+            padding: 20px;
+        }
+        .twoS h1{
+            font-size: 50px;
+            padding: 20px;
+            justify-content: center;
+            margin-top: -20px;
+        }
+        .gridcontainer1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            gap: 20px; /* gap between rows and columns */
+            /* padding: 20px; */
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 1;
+            margin-top: -15px;
+            
+        }
+        .gridcontainer1 img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .twoS .tun{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        .gridcontainer1 button{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .Newarivals{
+            border: 1px solid white;
+            margin-bottom: 10px;
+        }
+        .Newarivals h6{
+            font-size: 18px;
+        }
+        .Newarivals p{
+            font-size: 10px;
+        }
+        .threeS{
+            background-image: url(shopping\ bag.webp);
+            height: 100%;
+            padding: 20px;
+            text-align: center;   
+        }
+        .ekk{
+            justify-content:center;
+            align-items: center;
+            padding: 80px;
+        }
+        .threeS h1{
+            background-color: white;
+            font-size: 60px; 
+            
+           
+        }
+        .threeS h3{
+            background-color: white;
+            /* width:300px ;
+            height:50px ; */
+            font-size: 40px;
+        }
+        .threeS button{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        .fourS{
+            text-align: center;
+            padding: 20px;
+        }
+        .fourS h1{
+            font-size: 60px;
+            margin-bottom: -10px;
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 40px; /* gap between rows and columns */
+            padding: 40px;
+            text-align: center;
+        }
+        .review{
+            background-color: rgb(249, 198, 224);
+            padding: 20px;
+        }
+        .review h2{
+            font-size: 22px;
+        }
+        .review p{
+            font-size: 16px;
+            margin-top: 50px;
+        }
+        .fiveS{
+            text-align: center;
+            
+        }
+        .fiveS h1{
+            font-size: 50px;
+        }
+        .fiveS h2{
+            font-size: 30px;
+            color: red;
+            margin-top: -20px;
+        }
+        footer{
+            background-color:rgb(249, 198, 224);
+            padding: 20px;
+            
+
+        }
+        .container3{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 40px; /* gap between rows and columns */
+            padding: 40px;
+            
+        }
+        .container3 ul li{
+            list-style: none;
+            line-height: 2.5;
+            font-weight:0;
+        }
+        .first h2{
+            font-size: 35px;
+        }
+        .first h2{
+            text-align: left;
+            font-size: 22px;
+        }
+        .first img{
+            width: 100px;
+            height: 80px;
+        }
+        .icoon {
+            display: flex;
+            font-size: 30px;
+            gap: 10px;
+            /* margin-top: -30px; */
+        }
+        .last p{
+            text-align: center;
+            margin-top: -50px;
+        }
+        .extra{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            gap: 20px;
+        }
+        .extra img{
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .peter{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            gap: 20px; /* gap between rows and columns */
+             padding: 20px; 
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 1;
+            margin-top: -15px;
+        }
+        .peter img{
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .black h1{
+            font-size: 50px;
+        }
+        .black p{
+            margin-top: -30px;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+        }
+        .black{
+            text-align: center;
+        }
+        .black button{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        .whole{
+            display: flex;
+        }
+        .pink img{
+            display: block;
+        }
+        .whole .A img{
+            width: 500px;
+        }
+        .B{
+            width: 250px;
+            height: 400px;
+        }
+        button:hover{
+            background-color:white;
+        }
+        .tun:hover{
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <header class="oneH">
+        <div class="ssearchh">
+            <input value="search" type="search" placeholder="search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <h1>Welcome to our site! Shop and enjoy!</h1>
+        <div class="boat"><button><i class="fa-solid fa-bars"></i> Menu</button></div>
+    </header>
+
+    <header class="twoH">
+        <div class="logo">
+            <img src="shop logo.jpg">
+        </div>
+        <div class="both">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <!-- <li><a href="about.html">About Us</a> -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="dashnewboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero_container">
+            <h1>RUSHBUYSNOW</h1>
+            <p>Explore the latest trends in women's clothing and fashion at Rushbuysnow. Our curated collection features stylish pieces that will elevate your wardrobe. With a modern design, our website is designed to make your shopping experience stand out.</p>
+            <button onclick="">SHOP NOW</button>
+        </div>
+    </section>
+
+    <section class="oneS">
+        <h1>Categories</h1>
+        <div class="gridcontainer">
+            <div class="catego">
+                <img src="hand_bag.webp" alt="Hand Bag">
+                <button>CHECK NOW</button>
+                <h3>Hand Bag</h3>
+            </div>
+            <div class="catego">
+                <img src="head_wrap.jpg" alt="Head Wrap">
+                <button>CHECK NOW</button>
+                <h3>Head Wrap</h3>
+            </div>
+            <div class="catego">
+                <img src="hijab.webp" alt="Hijab">
+                <button>CHECK NOW</button>
+                <h3>Hijab</h3>
+            </div>
+            <div class="catego">
+                <img src="frok.jpg" alt="Frock">
+                <button>CHECK NOW</button>
+                <h3>Frok</h3>
+            </div>
+            <div class="catego">
+                <img src="shoes.jpg" alt="Shoes">
+                <button>CHECK NOW</button>
+                <h3>Shoes</h3>
+            </div>
+        </div>
+    </section>
+    <section class="twoS">
+        <h1>New Arrivals</h1>
+        <div class="gridcontainer1">
+            <div class="Newarivals">
+                <img src="neck_n_ear.jpg">
+                <h5>Elegant And Stylist white Flower Pendant Earing And Necklace,__________</h5>
+                <h6>$25.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="instant_hijab.jpeg">
+                <h5>Instant Hijjabs Chiffon Hijab Scarf With CrDesign Muslim Scarf Women Islamic</h5>
+                <h6>$15.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="hijab_cotton.jpg">
+                <h5>@024 Muslim cotton Scarves and Hijabs come in plain stylea, beaded shawls</h5>
+                <h6>$16.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+            <div class="Newarivals">
+                <img src="blouse.jpg">
+                <h5>Elevate your wardrobe withthis sophisticated and breadable blousse</h5>
+                <h6>$18.00</h6>
+                <p>Excluding sales tax</p>
+                <button onclick="">Add to cart</button>
+            </div>
+        </div>
+        <Button class="tun">Load More</Button>
+    </section>
+    <section class="threeS">
+         <div class="ekk"> 
+            <h1>Best Collection</h1>
+        <!-- </div> -->
+        <!-- <div class="doh"> -->
+            <h3>Get the best price</h3>
+            <button>Shop now</button>
+         </div> 
+        
+    </section>
+    <section class="black">
+        <h1> Best Sellers</h1>
+        <p>Welcome to our women's clothing collection!We a wide rangeof stylist and comfortable clothing options
+            for women of all ages and sizes. From casual wear to formal attire, we have something for everyone. 
+            Browse our collecion today and find your perfect outfit!
+        </p>
+        <div class="peter">
+        <div class="Newarivals">
+            <img src="neck_n_ear.jpg">
+            <h5>Elegant And Stylist white Flower Pendant Earing And Necklace,__________</h5>
+            <h6>$25.00</h6>
+            <p>Excluding sales tax</p>
+            <button onclick="">Add to cart</button>
+        </div>
+        <div class="Newarivals">
+            <img src="instant_hijab.jpeg">
+            <h5>Instant Hijjabs Chiffon Hijab Scarf With CrDesign Muslim Scarf Women Islamic</h5>
+            <h6>$15.00</h6>
+            <p>Excluding sales tax</p>
+            <button onclick="">Add to cart</button>
+        </div>
+        <div class="Newarivals">
+            <img src="hijab_cotton.jpg">
+            <h5>@024 Muslim cotton Scarves and Hijabs come in plain stylea, beaded shawls</h5>
+            <h6>$16.00</h6>
+            <p>Excluding sales tax</p>
+            <button onclick="">Add to cart</button>
+        </div>
+        <div class="Newarivals">
+            <img src="blouse.jpg">
+            <h5>Elevate your wardrobe withthis sophisticated and breadable blousse</h5>
+            <h6>$18.00</h6>
+            <p>Excluding sales tax</p>
+            <button onclick="">Add to cart</button>
+        </div>
+    </div>
+    <button onclick="">Shop More</button>
+    </section>
+    <section class="fourS">
+        <h1>Testimonals</h1>
+        <p>See what our customers have to say.</p>
+        <div class="container2">
+        <div class="review">
+            <h2>Susan</h2>
+            <p>"I highly recommend Rushbuysnow for a stress-free shopping experience. Friendly website, the checkout process is smooth, 
+                and the products are delivered promptly and match description. My shopping experience with them was great."</p>
+        </div>
+        <div class="review">
+            <h2>Sushaw</h2>
+            <p>Initially, I had doubts, but the exceptional customer service changed my mind. 
+                The product surpassed my expectations, and I plan to return as a customer and recommend this website to others.</p>
+        </div>
+        <div class="review">
+            <h2>Amy</h2>
+            <p>"I have found the perfect scarf for this winter season on RushBuySnow. The website is so easy to use and the prices are unbeatable.
+                 I highly recommend this site to anyone looking high-quality scarves at affordable prices."</p>
+        </div>
+        <div class="review">
+            <h2>Machi</h2>
+            <p>"I'm thrilled with my jacket purchase from RushBuySnow. The quality is exceptional, . 
+                The customer service was remarkable, making the buying process effortless. Highly recommend for top-notch outdoor gear</p>
+        </div>
+        </div>
+    </section>
+    <section class="fiveS">
+        <h1>Follow us on instagram</h1>
+        <h2>#RUSHBYSNOW</h2>
+        <div class="whole">
+        <img  class="A" src="flowerpot.jpg" >
+        <div class="pink">
+        <img src="leaf.webp">
+        <img src="bricks.jpeg">
+        </div>
+        <img class="B" src="sofa1.avif">
+        </div>
+    </section>
+    <footer>
+        <div class="container3">
+        <div class="first">
+        <h1>Rushbysnow</h1>
+        <img src="shop logo.jpg">
+        <p>70 washington Square South, NY 10012, United States</p>
+        <p>(987)6543210</p>
+        <p>info@rushbysnow.com</p>
+        </div>
+        <div class="first">
+           
+            <ul>
+                <h2>Store and Site</h2>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Contact</li>
+                <li>FAQ</li>
+            </ul>
+            <ul class="icoon">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+        <div class="first">
+            
+            <ul>
+                <h2>Policies</h2>
+                <li>Privacy policy</li>
+                <li>Shipping policy</li>
+                <li>Return policy</li>
+                <li>Terms & condition</li>
+            </ul>
+        </div>
+    </div>
+    <div class="last"><p>@2024 Rushbysnow. created by Pravaah Consulting Inc</p></div>
+    </footer>
+</body>
+</html>

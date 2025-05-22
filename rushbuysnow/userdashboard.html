@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        .full_container{
+            display: flex;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color:grey;
+        }
+        .side_container{
+            background-color: red;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .side_container h2{
+            margin-bottom: 40px;
+            color: white;
+        }
+        #sidebar{
+            background-color: red;
+            width: 250px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .side_container ul li i{
+        color: white;
+        font-size: 1.2rem;
+        }
+        .side_container ul {
+            list-style-type: none;
+            
+        }
+        .side_container ul li {
+            display:block;
+            padding: 20px;
+        }
+        .side_container a span{
+            overflow: hidden;
+        }
+        .side_container ul li a{
+            text-decoration: none;
+            color: white;
+            gap: 1.5rem;
+        }
+        .on:hover{
+            background-color:whitesmoke;
+            border-radius: 8px;
+        }
+        .next_container{
+            width: 100%;
+            padding: 10px; 
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 25px;
+        }
+        .head button{
+            background-color:red;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .user_list{
+            background-color:red;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            padding:10px
+        }
+        .user_list h2{
+            margin-bottom: 15px;
+        }
+        .user_list li{
+            list-style-type: none;
+        }
+        .recent_orders{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            border-radius: 8px;
+            padding: 10px; 
+            margin-top: 30px;
+        }
+        .recent_orders h2{
+            margin-top:20px ;
+            color: black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #bdc3c7;
+        }
+
+        table th {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="full_container">
+        <aside id="sidebar">
+            <h4>Rushbuysnow</h4>
+            <div class="side_container">
+                <ul>
+                    <li class="on"><a href="#"><i class="fa-solid fa-list"></i><span> MyOrder</span></a></li>
+                    <li class="on"><a href="#"><i class="fa-regular fa-user"></i><span> Profile</span></a></li>
+                    <li class="on"><a href="#"><i class="fa-sharp-duotone fa-solid fa-magnifying-glass-location"></i><span> TrackOrder</span></a></li>
+                    <li class="on"><a href="#"><i class="fa-solid fa-gear"></i><span> Settings</span></a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="next_container">
+            <main class="main_container">
+                <header class="head">
+                    <h1>User Dashboard</h1>
+                    <button>LogOut</button>
+                </header>
+                <div class="user_list">
+                    <h2>Profile Overview</h2>
+                    <li><span>name: </span>Peter Parker</li>
+                    <li><span>Email: </span>peterparker@example.com</li>
+                    <li><span>Membership Level: </span>Gold</li>
+                </div>
+                <div class="recent_orders">
+                    <h2>Recent orders</h2>
+                    <table class="list_order">
+                        <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Item Type</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>H&M</td>
+                                <td>White Shirt</td>
+                                <td>10-11-2024</td>
+                                <td>15-11-2024</td>
+                                <td>Confirmed</td>
+                            </tr>
+                            <tr>
+                                <td>ZARA</td>
+                                <td>Red scarf</td>
+                                <td>16-11-2024</td>
+                                <td>20-11-2024</td>
+                                <td>Confirmed</td>
+                            </tr>
+                            <tr>
+                                <td>YSL</td>
+                                <td>Pointed shoes women</td>
+                                <td>13-11-2024</td>
+                                <td>118-11-2024</td>
+                                <td>Confirmed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>
